@@ -477,17 +477,17 @@ a {
     min-width: 137px;
 }
 /* ==== Goals ==== */
-.goals .content {
+.features .content {
     display: flex;
     justify-content: space-between;
     margin: 200px auto;
 }
 
-.goals .info {
+.features .info {
     max-width: 50%;
 }
 
-.goals .sub-title {
+.features .sub-title {
     margin-top: 71px;
     color: #171100;
     font-family: Sen;
@@ -497,7 +497,7 @@ a {
     letter-spacing: -0.076rem;
 }
 
-.goals .desc {
+.features .desc {
     margin-top: 8px;
     color: #5f5b53;
     font-size: 1.8rem;
@@ -505,12 +505,12 @@ a {
     line-height: 1.75;
 }
 
-.goals .btn-active {
+.features .btn-active {
     margin-top: 32px;
     min-width: 137px;
 }
 
-.goals .thumb-goals {
+.features .thumb-goals {
     width: 470px;
     height: 440px;
     border-radius: 20px;
