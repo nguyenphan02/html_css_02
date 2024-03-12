@@ -37,6 +37,10 @@ a {
     text-align: center;
 }
 
+.btn:hover {
+    opacity: 0.7;
+}
+
 .btn-active {
     background-color: #ffb900;
 }
@@ -106,33 +110,33 @@ a {
     margin-left: auto;
 }
 
-/* ==== Stats ==== */
-.stats {
+/* ==== Hero ==== */
+.hero {
     padding: 52px 0 65px;
     background-color: #fffcf4;
 }
 
-.stats .content {
+.hero .body {
     display: flex;
 }
 
-/* Stats Block */
-.stats .stats-block {
+/* Hero left */
+.hero .media-block {
     position: relative;
 }
 
-.stats .img-block {
+.hero .img-block {
     width: 470px;
     height: 685px;
     border-radius: 20px;
     object-fit: over;
 }
 
-.stats .img-block:hover {
+.hero .img-block:hover {
     cursor: pointer;
 }
 
-.stats .courses-block {
+.hero .courses-block {
     position: absolute;
     top: 393px;
     left: 300px;
@@ -143,38 +147,38 @@ a {
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
 }
 
-.stats .list-courses {
+.hero .list-courses {
     margin: 24px 0 0 24px;
 }
 
-.stats .courses-item {
+.hero .courses-item {
     display: flex;
     margin-top: 14px;
 }
 
-.stats .courses {
+.hero .courses {
     margin-left: 16px;
 }
 
-.stats .courses .value {
+.hero .courses .value {
     color: #5f5b53;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.86;
 }
 
-.stats .courses .name {
+.hero .courses .name {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
 }
-/* Info Stats*/
-.stats .info {
+/* Hero right*/
+.hero .content-block {
     margin: 52px 0 0 230px;
 }
 
-.stats h1 {
+.hero h1 {
     color: #171100;
     font-family: "Sen", sans-serif;
     font-size: 5.8rem;
@@ -183,7 +187,7 @@ a {
     letter-spacing: -1.16px;
 }
 
-.stats .desc {
+.hero .desc {
     margin-top: 22px;
     color: #5f5b53;
     font-size: 1.8rem;
@@ -191,45 +195,63 @@ a {
     line-height: 1.67;
 }
 
-.stats .btn-active {
+.hero .btn-active {
     min-width: 180px;
     height: 64px;
     padding: 22px 16px 15px;
 }
 
-.stats .link {
+.hero .link {
     display: flex;
     align-items: center;
     margin-top: 32px;
     cursor: pointer;
 }
 
-.stats .link p {
+.hero .watch-video {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+}
+
+.hero .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hero span {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-.stats .desc-recent {
+.hero .desc-recent {
     margin-top: 48px;
 }
 
-.stats .values,
-.stats .value-students,
-.stats .value-courses {
+.hero .values {
     display: flex;
     align-items: center;
 }
 
-.stats .values {
+.hero .values {
     margin-top: 18px;
 }
 
-.stats .value-students {
+.hero .value-students {
     margin-right: 28px;
 }
 
-.stats strong {
+.hero strong {
     margin-right: 12px;
     color: #171100;
     font-family: Sen;
@@ -237,7 +259,7 @@ a {
     font-weight: 700;
 }
 
-.stats .value p {
+.hero .values p {
     margin-top: 20px;
 }
 
@@ -393,9 +415,9 @@ a {
 }
 
 /* ==== Feedback ==== */
-.feedback .content {
+.feedback .body {
     display: flex;
-    gap: 130px;
+    justify-content: space-between;
 }
 
 .feedback .img-block {
@@ -412,8 +434,22 @@ a {
     object-fit: cover;
 }
 
+.feedback img:hover {
+    width: 280px;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: orange;
+    box-shadow: 5px 5px 5px 0px rgba(236, 249, 88, 0.7);
+    cursor: pointer;
+}
+
 .feedback .thumb1 {
     margin-top: 34px;
+}
+
+.feedback .info {
+    max-width: calc(50% - 65px);
 }
 
 .feedback .sub-title {
